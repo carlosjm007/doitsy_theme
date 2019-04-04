@@ -11,3 +11,19 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  storefront
 Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options, editor-style
 */
+
+.quantityDiscountTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.quantityTableRow, .discountTableRow {
+	padding: 2px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+/*
+.discountTableRow, .data {
+	text-decoration-color: red;
+}
+*/
