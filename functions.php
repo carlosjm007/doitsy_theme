@@ -19,12 +19,12 @@ function woocommerce_price_by_id_wps( $atts ) {
 		} else {
 			return  "Wrong product id";
 		}
-		$html = '<div>';
+		$html = '<div class="quantityDiscountDiv">';
 		$html = $html . '<span>Buy more and save money</span>';
 		$html = $html . '<table class="quantityDiscountTable">';
 		$html = $html . '<tr>';
-		$html = $html . '<th class="quantityTableRow">Minimum Qty</th>';
-		$html = $html . '<th class="discountTableRow">Discount</th> ';
+		$html = $html . '<th>Minimum Qty</th>';
+		$html = $html . '<th>Discount</th> ';
 		$html = $html . '</tr>';
 		for ( $i = 1; $i <= 5; $i++ ) {
 			$quantity = get_post_meta( $id, "_bulkdiscount_quantity_$i", true );
@@ -36,7 +36,7 @@ function woocommerce_price_by_id_wps( $atts ) {
 				$html = $html . '</tr>';
 			}
 		}
-		$html = $html . '</table>';
+		$html = $html . '</table></div>';
 	}
 	return $html;
 }
